@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    line-height: 40px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #4ac6d2;
+}
+
+nav ul li a {
+    color: #9e15bf;
+    padding-bottom: 5px;
+}
+
+nav ul li a:hover {
+    border-bottom: solid 2px #9e15bf;
+}
+
+.row {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.leftcol .motto{
+    margin: 20px 0;
+    color: black;
+}
+
+.leftcol .subtext {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.leftcol .price {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.leftcol h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.leftcol {
+    margin-bottom: 30px;
+}
+
+button {
+    width: 100px;
+    background-color: #9e15bf;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: width .5s;
+}
+
+button:hover {
+    width: 120px;
+}
+
+
+.rightcol {
+    position: relative;
+}
+.headphones {
+    width: 80%;
+}
+
+.colorbox {
+
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #4ac6d2;
+    height: 100%;
+    width: 80%;
+    border-radius: 20px 0 0 20px;
+    z-index: -1;
+    transform: translateX(120px);
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    .logo {
+        font-size: 1.8em;
+    }
+
+    .navbar {
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
+    nav ul li a {
+        font-size: large;
+    }
+
+    .row {
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    .row .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .leftcol {
+        flex-basis: 40%;
+        margin-left: 50px;
+        padding-bottom: 200px;
+    }
+
+    .leftcol h1 {
+        font-size: 54px;
+    }
+
+    .leftcol p {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 18px;
+        text-align: center;
+        padding: 10px 20px;
+        width: 120px;
+        
+    }
+
+    button:hover {
+        width: 140px;
+    }
+
+    .rightcol {
+        flex-basis: 60%;
+    }
+
+    .colorbox {
+        height: 80%;
+        top: 100px;
+        transform: translateX(150px);
+
+    }
+
+    .rightcol img {
+        width: 70%;
+    }
+}
+
